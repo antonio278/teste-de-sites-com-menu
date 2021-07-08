@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-image: url('img/blink.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.menu{
+    background-color: rgb(2, 2, 48);
+    position: relative;
+    top:10px;
+}
+.menu ul{
+    padding:0;
+    
+}
+.menu ul ul{
+    display: none;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+.menu ul li{
+    background-color: rgb(2, 2, 48);
+    color:white;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    transform: translate(-22%);
+    display: inline-block;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    left:25%;
+    z-index: 1000;
+    border-radius: 25px;
+    border: 2px solid rgb(253, 251, 251);
+    
+    
+
+}
+.menu ul li:hover{
+    background-color: teal;
+}
+.menu ul ul {
+    margin-left: -6px;
+}
+.menu ul ul ul{
+    margin-left: 195px;
+    position:absolute;
+    top:0px
+}
+main{
+    background-color:#00000080;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: 15px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
